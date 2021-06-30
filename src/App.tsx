@@ -1,8 +1,16 @@
 import React from "react";
-import "./App.css";
+
+import Todos from "./commponents/Todos";
+import Todo from "./models/todo";
 
 function App() {
-  return <div></div>;
+  const todos = [new Todo("Learn React"), new Todo("Learn Nodejs")];
+
+  return (
+    <div>
+      <Todos items={todos} />
+    </div>
+  );
 }
 
 export default App;
